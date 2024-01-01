@@ -17,6 +17,22 @@
   src: url('./static/Nunito-ExtraBold.ttf');
 }
 
+/* scrollbar */
+::-webkit-scrollbar{
+  width: .60rem;
+  background: rgba(172, 172, 245, 0.842);
+  border-radius: .5rem;
+  z-index: -22;
+}
+::-webkit-scrollbar-thumb{
+  background: rgba(21, 21, 100, 0.822);
+  border-radius: .5rem;
+
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgba(21, 21, 100);
+}
+
 
 *{
   padding:0;

@@ -32,7 +32,7 @@ const Blog = () => {
                                 <p className="service-desc">
                                 Êtes-vous à la recherche de cuisiniers et cuisinières pour vos restaurants, supermarchés et autres établissements ? N'hésitez pas à contacter Moja Service. Nous mettons à votre disposition des agents hautement qualifiés pour répondre à tous vos besoins spécifiques.
                                 </p>
-                                <Link to="/cuisiniere" className="service-btn">savoir plus</Link>
+                                <a href="/cuisiniere#top" className="service-btn">savoir plus</a>
                             </div>
                         </div>
 
@@ -47,7 +47,9 @@ const Blog = () => {
                                 <p className="service-desc">
                                 Nous avons le plaisir de vous offrir les services de nos cuisinières et hôtesses de marque, qui se distinguent par leur excellence et leur professionnalisme. En choisissant Moja Service, vous êtes assuré(e) de bénéficier d'une équipe talentueuse et compétente pour répondre à tous vos besoins. Nous nous engageons à contribuer activement à l'utilité et au succès de votre entreprise.
                                 </p>
-                                <Link to="/hotesse" className="service-btn">savoir plus</Link>
+                                <a href="/hotesse#top" className="service-btn">
+                                    savoir plus
+                                </a>
                             </div>
                         </div>
 
@@ -62,7 +64,7 @@ const Blog = () => {
                                 <p className="service-desc">
                                 Nous sommes fermement convaincus que la formation est la clé pour fournir des services d'une qualité supérieure. C'est pourquoi nous proposons des programmes de formation continue à nos personnels. Notre objectif est de garantir que nous maintenons les normes les plus élevées et adoptons les meilleures pratiques actuelles.
                                 </p>
-                                <Link to="/formation" className="service-btn">savoir plus</Link>
+                                <a href="/formation#top" className="service-btn">savoir plus</a>
                             </div>
                         </div>
                     </div>

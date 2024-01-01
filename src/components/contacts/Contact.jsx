@@ -1,4 +1,4 @@
-import { LocationOn, Mail, Phone } from '@mui/icons-material'
+import { LocationOn, Mail, Phone, WhatsApp } from '@mui/icons-material'
 /* import emailjs from '@emailjs/browser'; */
 import './contact.scss'
 import { useState } from 'react';
@@ -73,15 +73,17 @@ const Contact = () => {
                                         <span className="contact-txt">+243 982 558 251</span>
                                     </div>
                                 </div>
+                                <div className="contact-row">
+                                    <div className="contact-row-icon">
+                                        <WhatsApp className='contact-icon'/>
+                                    </div>
+                                    <div className="contact-row-text">
+                                        <h2 className="contact-text-h2">Whatsapp:</h2>
+                                        <span className="contact-txt">+243 90 4627 107</span>
+                                    </div>
+                                </div>
                             </div>
                             <div className="contact-left-bottom">
-{/*                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.4334450565507!2d15.268762665319963!3d-4.329408186018682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a317bcc7b4d15%3A0x9e7487b7f498d9d8!2s25%20O.U.A%2C%20Kinshasa!5e0!3m2!1sfr!2scd!4v1689414951569!5m2!1sfr!2scd" 
-                                    width={"100%"}
-                                    height={"300"}
-                                    style={{border:"0"}} 
-                                    allowfullscreen={""} 
-                                    loading={"lazy"} 
-                                    referrerpolicy={"no-referrer-when-downgrade"} /> */}
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15912.266173827702!2d15.304387944046013!3d-4.398650901656667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a37579c78f681%3A0x3470dedc5cbf0d7c!2sSalongo%2C%20Kinshasa!5e0!3m2!1sfr!2scd!4v1697389039139!5m2!1sfr!2scd"
                                                                             width={"100%"}
                                                                             height={"300"}

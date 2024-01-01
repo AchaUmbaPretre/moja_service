@@ -9,7 +9,7 @@ const Formation = () => {
   return (
     <>
     <Topbar/>
-      <div className="blogSlider">
+      <div className="cuisiniereSlider">
         <Navbar/>
         <hr className="home-hr" />
         <div className="blogSlider-wrapper">

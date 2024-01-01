@@ -16,7 +16,7 @@ const Formation = () => {
           <div className="blogSlider-container">
             <h2 className="blogslider-h2">Formation</h2>
             <div className="blogSlider-row">
-                <Link className='Blog-link' to={'/'}>Home /</Link><Link className='Blog-link'> Formation</Link>
+                <Link className='Blog-link' to={'/'}>Accueil /</Link><Link className='Blog-link'> Formation</Link>
             </div>
           </div>
         </div>

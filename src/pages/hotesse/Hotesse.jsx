@@ -16,7 +16,7 @@ const Hotesse = () => {
           <div className="blogSlider-container">
             <h2 className="blogslider-h2">Hotesse</h2>
             <div className="blogSlider-row">
-                <Link className='Blog-link' to={'/'}>Home /</Link><Link className='Blog-link'> Hotesse</Link>
+                <Link className='Blog-link' to={'/'}>Accueil /</Link><Link className='Blog-link'> Hotesse</Link>
             </div>
           </div>
         </div>

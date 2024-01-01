@@ -1,4 +1,4 @@
-import { Facebook, Instagram, LinkedIn, LocationOn, Mail, Phone, Twitter, YouTube } from '@mui/icons-material'
+import { Facebook, Instagram, LinkedIn, LocationOn, Mail, MailOutline, Phone, Twitter, WhatsApp, YouTube } from '@mui/icons-material'
 import './topbar.scss'
 import { Link } from 'react-router-dom'
 
@@ -16,8 +16,12 @@ const Topbar = () => {
                         <Phone className='topbar-icons'/>
                         <span className="topbar-adresse">+243982558251</span>
                     </div>
+                    <div className="topbar-left-icons topNum">
+                        <WhatsApp className='topbar-icons'/>
+                        <span className="topbar-adresse">+243904627107</span>
+                    </div>
                     <div className="topbar-left-icons">
-                        <Mail className='topbar-icons'/>
+                        <MailOutline className='topbar-icons'/>
                         <span className="topbar-adresse">mojaservice1993@gmail.com</span>
                     </div>
                 </div>
