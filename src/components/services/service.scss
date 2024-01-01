@@ -1,0 +1,137 @@
+@import '../../style.scss';
+
+
+.services{
+    width: 100%;
+    padding: 50px 0;
+    background: #f2f2f2;
+
+    .service-wrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+        .service-cont-title{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            .service-title{
+                font-size: 1.2rem;
+                color: rgb(69, 69, 226);
+            }
+            .service-sous-title{
+                width: 60%;
+                margin: 0 auto;
+                font-size: 2.2rem;
+                font-family: 'NunitoExtraBold';
+                @include mobile{
+                    width: 100%;
+                 }
+            }
+            .apropos-barre{
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                height: 5px;
+                width: 15%;
+                background: rgb(69, 69, 226);
+                overflow: hidden;
+
+                .apropos-moov{
+                    background: #fff;
+                    height: 100%;
+                    width: 7px;
+                    animation: barAnim 10s infinite;
+
+                        @keyframes barAnim {
+                            0%{
+                                transform: translateX(0px);
+                            }
+                            50%{
+                                transform: translateX(142px);
+                            }
+                            100%{
+                                transform: translateX(0px);
+                            }
+                        }
+                }    
+            }
+        }
+        .service-rows{
+            margin: 0 auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3,300px);
+            gap: 20px;
+
+            @include tablette{
+                width: 100%;
+                grid-template-columns: repeat(2,300px);
+                align-items: center;
+                justify-content: center;
+            }
+
+            @include mobile{
+               display: flex;
+               flex-direction: column;
+               padding: 20px;
+            }
+            .service-row{
+                padding: 30px;
+                background: #dee2f3;
+                display: grid;
+                gap: 20px;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: -1px 15px 17px 0px rgba(0, 0, 0, 0.082);
+                @include mobile{
+                    height: 280px;
+                 }
+
+                &:nth-child(6){
+                    background: rgb(69, 69, 226);
+                    color: #fff;
+                    .service-icons{
+                        border: 2px solid #fff;
+                        max-width: max-content;
+                        margin: 0 auto;
+                        padding: 10px;
+                        border-radius:5px 5px 50px 50px;
+                        .service-icon{
+                            color: #fff;
+                        }
+                    }
+                    .service-h3{
+                        font-size: 1.7rem;
+                        font-family: 'NunitoExtraBold';
+                    }
+                    .service-desc{
+                        font-size: 2rem;
+                        color: #fff;
+                        text-align: center;
+                        font-family: 'NunitoExtraBold';
+                    }
+                }
+
+                .service-icons{
+                    border: 2px solid rgb(69, 69, 226);
+                    max-width: max-content;
+                    margin: 0 auto;
+                    padding: 10px;
+                    border-radius:5px 5px 50px 50px;
+
+                    .service-icon{
+                        color: rgb(69, 69, 226);;
+                    }
+                }
+                .service-h3{
+                    font-size: 1.3rem;
+                }
+                .service-desc{
+                    font-size: .9rem;
+                    color: gray;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

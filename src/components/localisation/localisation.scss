@@ -1,0 +1,58 @@
+@import '../../style.scss';
+
+
+.localisation{
+    width: 100%;
+    margin: 100px 0;
+    .localisation-wrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+        .service-cont-title{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            .service-title{
+                font-size: 1.2rem;
+                color: rgb(69, 69, 226);
+            }
+            .service-sous-title{
+                width: 60%;
+                margin: 0 auto;
+                font-size: 2.2rem;
+                font-family: 'NunitoExtraBold';
+                @include mobile{
+                    width: 100%;
+                 }
+            }
+            .apropos-barre{
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                height: 5px;
+                width: 15%;
+                background: rgb(69, 69, 226);
+                overflow: hidden;
+
+                .apropos-moov{
+                    background: #fff;
+                    height: 100%;
+                    width: 7px;
+                    animation: barAnim 10s infinite;
+
+                        @keyframes barAnim {
+                            0%{
+                                transform: translateX(0px);
+                            }
+                            50%{
+                                transform: translateX(142px);
+                            }
+                            100%{
+                                transform: translateX(0px);
+                            }
+                        }
+                }    
+            }
+        }
+    }
+}

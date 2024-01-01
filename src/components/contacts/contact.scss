@@ -1,0 +1,207 @@
+@import '../../style.scss';
+.contact{
+    background: linear-gradient(rgba(22, 22, 104, 0.685),rgba(21, 21, 65, 0.548)),url('./../../images/team-bg.jpg') no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 50px 0;
+    .contact-wrapper{
+        max-width: 1025px;
+        margin: 0 auto;
+        @include laptop{
+            width: 900px;
+        }
+        @include tablette{
+            width: 850px;
+        }
+        @include mobileXR{
+            width: 360px;
+            position: relative;
+            overflow: hidden;
+        }
+        @include mobile12pro{
+            width: 350px;
+        }
+        @include mobileSE{
+            width: 345px;
+        }
+        .client-cont-title{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            .client-sous-title{
+                width: 60%;
+                margin: 0 auto;
+                font-size: 2rem;
+                font-family: 'Anton', sans-serif;
+                color: rgb(21, 21, 65);
+                @include mobile{
+                    width: 100%;
+                 }
+            }
+            .client-bg{
+                color: #fff;
+            }
+            .apropos-barre{
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                height: 5px;
+                width: 10%;
+                background: rgb(21, 21, 65);
+                overflow: hidden;
+                .apropos-moov{
+                    background: #fff;
+                    height: 100%;
+                    width: 7px;
+                    animation: barAnim 10s infinite;
+
+                    @keyframes barAnim {
+                        0%{
+                            width: 40%;
+                        }
+                        50%{
+                            width: 20%;
+                        }
+                        100%{
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-container{
+            width: 100%;
+            padding-top: 100px;
+            .contact-rows{
+                display: flex;
+                gap: 20px;
+                @include mobile{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .contact-left{
+                    flex: 1;
+                    border: 1px solid rgba(128, 128, 128, 0.336);
+                    padding: 20px;
+                    background: #fff;
+                    border-radius: 5px;
+                    .contact-left-rows{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .contact-row{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            .contact-row-icon{
+                                height: 40px;
+                                width: 40px;
+                                border-radius: 50%;
+                                background: rgba(39, 39, 99);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                @include mobileXR{
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                                .contact-icon{
+                                    color: #f2f2f2;
+                                    @include mobileXR{
+                                        font-size: 1rem;
+                                    }
+
+                                }
+                            }
+                            .contact-row-text{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 9px;
+                                @include mobileXR{
+                                    gap: 5px;
+                                }
+                                .contact-text-h2{
+                                    font-family: 'Anton', sans-serif;
+                                    color: rgba(21, 21, 65, 0.842);
+                                    font-size: 1rem;
+                                    font-weight: 300;
+                                    letter-spacing: 1.5px;
+                                    @include mobileXR{
+                                        font-size: .9rem;
+                                    }
+                                }
+                                .contact-txt{
+                                    text-decoration: none;
+                                    font-size: .9rem;
+                                    color: gray;
+                                    @include mobileXR{
+                                        font-size: .7rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .contact-left-bottom{
+                        margin-top: 20px;
+                    }
+                }
+                .contact-right{
+                    flex: 1;
+                    padding: 20px;
+                    background: #fff;
+                    border: 1px solid rgba(128, 128, 128, 0.336);
+                    border-radius: 5px;
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .form-control{
+                            width: 100%;
+                            display: flex;
+                            gap: 10px;
+                            .input-controle{
+                                border: none;
+                                width: 100%;
+                                resize: none;
+                                border-radius: 5px;
+                                padding: 15px;
+                                outline: none;
+                                border: 1px solid rgba(128, 128, 128, 0.336);
+                            }
+                        }
+                        textarea{
+                            resize: none;
+                            border-radius: 5px;
+                            padding: 10px;
+                            border: 1px solid rgba(128, 128, 128, 0.336);
+                            outline: none;
+                            @include mobileXR{
+                                height: 200px;
+                            }
+                        }
+                        .contact-submit{
+                            background: linear-gradient(rgba(39, 39, 99),rgba(22, 22, 56, 0.87));
+                            padding: 10px 15px;
+                            border-radius: 5px;
+                            color: #fff;
+                            width: max-content;
+                            font-size: .9rem;
+                            height: 40px;
+                            transition: 0.5s;
+                            cursor: pointer;
+                            border: none;
+                            &:hover{
+                                border: 2px solid rgb(10, 10, 15);
+                                color: rgb(10, 10, 15);
+                                padding: 10px 15px;
+                                background: transparent;
+                            }
+                        }
+                    }
+                }
+            }          
+        }
+    }
+}

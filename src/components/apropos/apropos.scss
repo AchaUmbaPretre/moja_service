@@ -1,0 +1,128 @@
+@import '../../style.scss';
+
+.apropos{
+    position: relative;
+    width: 100%;
+    margin: 100px 0;
+    @include tablette{
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    @include mobile{
+        padding: 20px;
+    }
+   
+    .apropos-wrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+
+        @include tablette{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .articles-shape{
+            position: absolute;
+            right: 0;
+            top: 200px;
+            z-index: -1;
+        }
+
+        .apropos-left{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .articles-element{
+                position: absolute;
+                top: -100px;
+                left: -5px;
+                z-index: -1;
+            }
+
+            .apropos-cont-title{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                position: relative;
+
+                .apropos-h1{
+                    font-size: 1.2rem;
+                    color: rgb(69, 69, 226);
+                    @include mobile{
+                        font-size: 1rem;
+                    }
+                }
+                .apropos-sous-title{
+                    font-size: 2.4rem;
+                    font-family: 'NunitoExtraBold';
+                }
+                .apropos-barre{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    height: 5px;
+                    width: 25%;
+                    background: rgb(69, 69, 226);
+
+                    .apropos-moov{
+                        background: #fff;
+                        height: 100%;
+                        width: 7px;
+                        animation: barAnim 10s infinite;
+
+                        @keyframes barAnim {
+                            0%{
+                                transform: translateX(0px);
+                            }
+                            50%{
+                                transform: translateX(142px);
+                            }
+                            100%{
+                                transform: translateX(0px);
+                            }
+                        }
+                    }
+                }
+            }
+            .apropos-desc{
+                color: gray;
+                line-height: 1.6;
+                text-align: justify;
+            }
+
+            .apropos-rows{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+
+                .apropos-row{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .apropos-icon{
+                        color: rgb(69, 69, 226);
+                    }
+
+                    .apropos-h4{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .apropos-right{
+            width: 100%;
+
+            .apropos-img{
+                object-fit: cover;
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@import '../../style.scss';
+
+.blogCoupe{
+    background: #f2f2f2;
+    .blogWrapper{
+        position: relative;
+        display: flex;
+        gap: 40px;
+        width: 1025px;
+        margin: 29px auto;
+        @include tablette{
+            width: 890px;
+            margin: 20px auto;
+        }
+        @include miniTablette{
+            flex-direction: column;
+
+        }
+        @include mobile{
+            width: 100%;
+            overflow: hidden;
+        } 
+        .blogWrapper-left{
+            position: relative;
+            flex:2;
+            border: 1px solid #dfdfdfa8;
+            padding: 30px;
+            background: #fcfcfc;
+            margin-bottom: 20px;
+            width: 65%;
+            @include miniTablette{
+                width: 60%;
+            }
+            @include mobile{
+                width: 100%;
+                overflow: hidden;
+            } 
+            .blogWrapper-img{
+                position: relative;
+                width: 100%;
+                .blog-img{
+                    width: 100%;
+                }
+                .blog-h2{
+                    font-size: 1.5rem;
+                    padding: 20px 0;
+                    color: #07194b;
+                    line-height: 1.5;
+                    text-align: justify;
+                    @include mobile{
+                        font-size: 1.2rem;
+                    } 
+                }
+                .blog-span{
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    color: #555;
+                    text-align: justify;
+                }
+                .blogcoupe{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    .desc-blogCoupe{
+                        font-size: 1rem;
+                        line-height: 1.6;
+                        color: #555;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        
+    }
+}

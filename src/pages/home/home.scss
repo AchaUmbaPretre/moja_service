@@ -1,0 +1,232 @@
+@import '../../style.scss';
+
+
+.home{
+    width: 100%;
+    overflow: hidden;
+    .home-wrapper{
+        width: 100%;
+        .home-container{
+            background: linear-gradient(rgba(21, 21, 65, 0.842),rgba(21, 21, 65, 0.548)), url(./../../images/texture-2613518_1280.jpg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            height: 70vh;
+            @include mobile{
+                height: 45vh;
+                position: relative;
+            }
+
+            .home-hr{
+                height: 1px;
+                background: #ffffff57;
+                width: 100%;
+                border: none;
+            }
+            .home-title{
+                width: 100%;
+                height: calc(60vh - 100px);
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                gap: 25px;
+                @include tablette{
+                    height: calc(50vh - 150px);
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                @include mobile{
+                    gap: 40px;
+                }
+
+                .home-h1{
+                    color: #fff;
+                    font-size: 3.2rem;
+                    font-weight: bold;
+                    letter-spacing: 5px;
+                    font-family: 'NunitoExtraBold';
+                    @include mobile{
+                        font-size: 2rem;
+                    }
+                }
+                .home-btn {
+                    color: #f2f2f2;
+                    border: 2px solid #fff;
+                    padding: 10px 15px;
+                    border-radius: 15px 5px;
+                    letter-spacing: 2px;
+                    transition: .5s;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                  
+                    &::before {
+                      content: "";
+                      position: absolute;
+                      top: 0;
+                      left: -115%;
+                      width: 100%;
+                      height: 100%;
+                      background-color: rgba(255, 255, 255, 0.5);
+                      transform: skewX(45deg);
+                      transition: left 0.5s ease-in-out;
+                      z-index: -1;
+                    }
+                  
+                    &:hover::before {
+                      left: 100%;
+                    }
+                  
+                    &:hover {
+                      background: #f2f2f2;
+                      color: rgb(69, 69, 226);
+                    }
+                  }
+
+            }
+        }
+        .client-wrapper{
+            position: relative;
+            top: -50px;
+            width: 100%;
+            height: 120px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            box-shadow: -1px 15px 17px 0px rgba(0, 0, 0, 0.151);
+            @include tablette{
+                display: flex;
+                flex-direction: column;
+                 max-width: 600px;
+                 margin: 100px auto;
+            }
+            @include mobile{
+                max-width: 380px;
+            }
+            @include mobileSE{
+                max-width: 340px;
+            }
+
+            .client-left{
+                border-radius: 10px 0px 0px 0px;
+                height: 100%;
+                padding: 10px;
+                background: rgb(69, 69, 226);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                @include mobile{
+                    padding-bottom: 20px;
+                }
+
+                .client-rows{
+                    height: 100%;
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .client-row-left{
+                        height: 60%;
+                        width: 40%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #fff;
+                        border-radius: 5px;
+                        @include mobile{
+                            height: 80%;
+                            width: 100%;
+                     }
+                
+                        .client-icon{
+                            color:rgb(69, 69, 226);
+                            @include mobile{
+                               
+                            }
+                        }
+                    }
+                    .client-row-right{
+                        height: 60%;
+                        width: 100%;
+                        @include mobile{
+                            height: 100%;
+                     }
+
+                        .client-h3{
+                            font-size: 1rem;
+                            font-weight: 500;
+                            @include mobile{
+                                font-size: .9rem;
+                             }
+                        }
+                    }
+                }
+
+            }
+            .client-right{
+                border-radius: 0px 10px 0px 0px;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #dee2f3;
+                @include mobile{
+                    height: 100%;
+                    width: 100%;
+                 }
+
+                .client-rows{
+                    height: 100%;
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .client-row-left{
+                        border-radius: 5px;
+                        height: 60%;
+                        width: 40%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: rgb(69, 69, 226);
+                        @include mobile{
+                            height: 80%;
+                            width: 100%;
+                         }
+                        .client-icon{
+                            color: #fff;
+                        }
+                    }
+                    .client-row-right{
+                        height: 60%;
+                        width: 100%;
+                        @include mobile{
+                            height: 60%;
+                            width: 100%;
+                            margin-bottom: 10px;
+                         }
+                        .client-h3{
+                            font-size: 1rem;
+                            font-weight: 500;
+                            color: rgb(69, 69, 226);
+                            @include mobile{
+                                font-size: .9rem;
+                             }
+                        }
+                        .client-h1{
+                            font-family: 'NunitoExtraBold';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

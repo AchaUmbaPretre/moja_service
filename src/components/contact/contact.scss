@@ -1,0 +1,112 @@
+@import '../../style.scss';
+
+.contact{
+    width: 100%;
+    padding: 100px 0;
+    .contact-wrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        gap: 40px;
+
+        @include tablette{
+           padding: 50px;
+        }
+        @include mobile{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+         }
+        .contact-left{
+                flex: 2;
+            .service-title{
+                font-size: 2.2rem;
+                font-family: 'NunitoExtraBold';
+                margin: 10px 0;
+            }
+            .apropos-barre{
+                position: relative;
+                display: flex;
+                align-items: center;
+                height: 5px;
+                width: 25%;
+                background: rgb(69, 69, 226);
+
+                .apropos-moov{
+                    background: #fff;
+                    height: 100%;
+                    width: 7px;
+                    animation: barAnim 10s infinite;
+
+                    @keyframes barAnim {
+                        0%{
+                            transform: translateX(0px);
+                        }
+                        50%{
+                            transform: translateX(142px);
+                        }
+                        100%{
+                            transform: translateX(0px);
+                        }
+                    }
+                }
+            }
+            .contact-left-bottom{
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .contact-rows-heure{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .contact-descript{
+                    color: gray;
+                    font-size: .9rem;
+                }
+                .contact-appel{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: rgb(69, 69, 226);
+                    width: max-content;
+                    padding: 10px;
+                    border-radius: 50px;
+                    .contact-call{
+                        color: #fff;
+                    }
+                }
+
+            }
+        }
+        .contact-right{
+            flex: 1;
+            width: 100%;
+            background: rgb(69, 69, 226);
+            padding: 40px;
+            border-radius: 10px;
+            .contact-form{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .contact-control{
+                    padding: 10px;
+                    cursor: pointer;
+                    background: #dee2f3;
+                }
+                .contact-textarea{
+                    resize: none;
+                    padding: 10px;
+                    background: #dee2f3;
+                }
+                .contact-btn{
+                    padding: 10px;
+                    font-size: .9rem;
+                    background: rgb(12, 12, 17);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
