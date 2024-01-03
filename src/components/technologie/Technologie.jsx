@@ -1,6 +1,5 @@
 import { GppGood, GppGoodOutlined } from '@mui/icons-material'
 import './technologie.scss'
-import videos from  "./../../images/VID-20231020-WA0006.mp4"
 import bg from "./../../images/curve-shape-1.png"
 import accueil from "./../../images/istockphoto-1397818580-1024x1024.jpg"
 import photo from "./../../images/camera-1130731_1280.jpg"
@@ -53,8 +52,14 @@ const Technologie = () => {
                             <h2 className='techno-h2'>Vidéo</h2>
                         </div>
                         <div className="techno-title">
-                            <video src={videos} className='video-techno'></video>
-                        </div>
+                            <iframe
+                                src="https://www.youtube.com/embed/r0wH5bAaQdo"
+                                className="video-techno"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                            </div>
                         <div className="techno-cat">
                             <div className="techno-cat-row">
                                 <span className="techno-syst">Tournage des Clips vidéos</span>
