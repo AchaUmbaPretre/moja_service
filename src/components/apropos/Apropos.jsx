@@ -4,7 +4,7 @@ import element from './../../images/element-img-1.png'
 import curve from './../../images/curve-shape-2.png'
 import aproposImg from './../../images/c2b32c317bb3cf0cacf3c56c9b0c166a.png'
 import aproposImg2 from './../../images/IMG-20231229-WA0008.jpg'
-import aproposImg3 from './../../images/IMG-20231229-WA0009.jpg'
+import aproposImg3 from './../../images/Apropos2.jpg'
 import './apropos.scss'
 
 const Apropos = () => {
